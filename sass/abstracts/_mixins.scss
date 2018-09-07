@@ -47,6 +47,23 @@ $breakpoint argument choices:
         }
         ;
     }
+
+    @if $breakpoint==phone-medium {
+        @media (max-width: 46.25em) {
+            //740px
+            @content
+        }
+        ;
+    }
+
+    @if $breakpoint==phone-large {
+        @media (max-width: 50em) {
+            //800px
+            @content
+        }
+        ;
+    }
+
     @if $breakpoint==tab-port {
         @media (max-width: 56.25em) {
             //900px
